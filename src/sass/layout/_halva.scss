@@ -1,0 +1,60 @@
+.halva {
+  background-color: #f5afb9;
+  padding-bottom: 0;
+
+  & .container {
+    justify-content: space-between;
+  }
+
+  &__content {
+    background-color: #abafd6;
+  }
+
+  & .section__title {
+    margin-bottom: 48px;
+  }
+
+  & .description-card__title {
+    margin-bottom: 62px;
+  }
+}
+
+.halva__btn {
+  width: 295px;
+  height: 30px;
+}
+
+.halva__aside-wrapp {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 58px;
+  padding-right: 58px;
+  padding-bottom: 55px;
+  background-color: #ec4844;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 65px;
+    left: 149px;
+    width: 147px;
+    height: 327px;
+    background-repeat: no-repeat;
+    background-image: url(../images/icons/postcard.svg);
+  }
+
+  & p {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 1.2;
+    text-align: center;
+  }
+}
+
+.halva__aside-btn {
+  width: 297px;
+  height: 64px;
+}
