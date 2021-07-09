@@ -1,0 +1,36 @@
+.ricepes {
+  background-color: #f5afb9;
+
+  & .container {
+    justify-content: flex-end;
+    background-color: #fff;
+  }
+}
+
+.ricepes__content {
+  flex-basis: calc((100% / 10) * 5);
+  margin-right: calc((100% / 10) * 1);
+}
+.slider {
+  background-color: rgb(151, 228, 51);
+}
+
+.slick-track {
+  height: 500px;
+  background-color: rgb(248, 142, 142);
+}
+.slider__slide {
+  width: 450px;
+  height: 400px;
+  margin-left: 40px;
+  margin-right: 40px;
+  transition: transform 250ms linear;
+}
+
+.slick-current {
+  transform: translateY(60px);
+}
+
+// .slick-center {
+//   border: 2px solid red;
+// }
