@@ -1,0 +1,33 @@
+.socials {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.socials__link {
+  display: block;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: #7448427c;
+  }
+}
+
+.socials__icon {
+  display: block;
+  width: 22px;
+  height: 22px;
+  fill: #000;
+  transition: fill 250ms linear;
+
+  .socials__link:hover &,
+  .socials__link:focus & {
+    fill: #fff;
+  }
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 10px;
+}

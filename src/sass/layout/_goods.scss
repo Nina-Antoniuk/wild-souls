@@ -1,5 +1,9 @@
 .goods {
   background-color: var(--main-bg-color);
+
+  & .container {
+    margin-bottom: 75px;
+  }
 }
 
 .goods__header {
@@ -12,4 +16,22 @@
 .goods__content {
   flex-basis: 506px;
   // flex-basis: calc((100% / 10) * 5);
+}
+
+.goods__slider {
+  .slick-track {
+    height: 1000px;
+    background-color: rgb(169, 250, 144);
+  }
+  .slider__slide {
+    width: 450px;
+    height: 400px;
+    margin-left: 40px;
+    margin-right: 40px;
+    transition: transform 250ms linear;
+  }
+
+  .slick-current {
+    transform: translateY(60px);
+  }
 }

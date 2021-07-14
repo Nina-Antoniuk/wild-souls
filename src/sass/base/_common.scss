@@ -11,7 +11,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #000000;
-  // background-color: var(--main-bg-color);
+  background-color: var(--main-bg-color);
 }
 
 h1,
@@ -45,6 +45,7 @@ p {
 .link:hover,
 .link:focus {
   color: var(--light-text-color);
+  outline-offset: 5px;
 }
 
 .btn {
@@ -98,7 +99,7 @@ p {
   max-width: 1110px;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgb(190, 253, 147);
+  // background-color: rgb(190, 253, 147);
 
   &__info {
     position: relative;
@@ -112,9 +113,9 @@ p {
     content: '';
     position: absolute;
     top: 0;
+    left: -53%;
     z-index: 0;
-    left: -120px;
-    width: 120px;
+    width: 349px;
     height: 100%;
     background-color: inherit;
   }

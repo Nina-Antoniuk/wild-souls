@@ -1,0 +1,39 @@
+@-webkit-keyframes right-spin {
+  from {
+    transform: translateX(0) rotate(0);
+  }
+
+  to {
+    transform: translateX(-98px) rotate(-15deg);
+  }
+}
+
+@keyframes right-spin {
+  from {
+    transform: translateX(0) rotate(0);
+  }
+
+  to {
+    transform: translateX(-98px) rotate(-15deg);
+  }
+}
+
+@-webkit-keyframes left-spin {
+  from {
+    transform: translateX(0) rotate(0);
+  }
+
+  to {
+    transform: translateX(150px) rotate(20deg);
+  }
+}
+
+@keyframes left-spin {
+  from {
+    transform: translateX(0) rotate(0);
+  }
+
+  to {
+    transform: translateX(150px) rotate(20deg);
+  }
+}

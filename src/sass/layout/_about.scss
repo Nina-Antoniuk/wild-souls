@@ -13,11 +13,18 @@
     height: 657px;
     position: absolute;
     top: 0;
-    left: 13px;
+    left: 105px;
     z-index: 0;
     background-color: #b0897e;
-    transform: rotate(347deg);
     // background-image: url();
+    -webkit-animation-name: right-spin;
+    animation-name: right-spin;
+    -webkit-animation-duration: 250ms;
+    animation-duration: 250ms;
+    -webkit-animation-delay: 500ms;
+    animation-delay: 500ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
   }
 
   &::after {
@@ -26,11 +33,19 @@
     height: 657px;
     position: absolute;
     top: 0;
-    right: -65px;
+    right: 0px;
     z-index: 0;
     background-color: #d16142;
-    transform: rotate(-347deg);
     // background-image: url();
+    // transform: translateX(0);
+    -webkit-animation-name: left-spin;
+    animation-name: left-spin;
+    -webkit-animation-duration: 250ms;
+    animation-duration: 250ms;
+    -webkit-animation-delay: 1000ms;
+    animation-delay: 1000ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
   }
 }
 
@@ -43,4 +58,44 @@
   z-index: 100;
   top: 0;
   left: 0;
+}
+
+@-webkit-keyframes right-spin {
+  from {
+    transform: translateX(0) rotate(0);
+  }
+
+  to {
+    transform: translateX(-98px) rotate(-15deg);
+  }
+}
+
+@keyframes right-spin {
+  from {
+    transform: translateX(0) rotate(0);
+  }
+
+  to {
+    transform: translateX(-98px) rotate(-15deg);
+  }
+}
+
+@-webkit-keyframes left-spin {
+  from {
+    transform: translateX(0) rotate(0);
+  }
+
+  to {
+    transform: translateX(150px) rotate(20deg);
+  }
+}
+
+@keyframes left-spin {
+  from {
+    transform: translateX(0) rotate(0);
+  }
+
+  to {
+    transform: translateX(150px) rotate(20deg);
+  }
 }

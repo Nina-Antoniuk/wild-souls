@@ -6,7 +6,9 @@
 
 //component
 @import './components/logo';
+@import './components/animations';
 @import './components/discription-card';
+@import './components/socials';
 
 //layout
 @import './layout/header';
@@ -19,3 +21,4 @@
 @import './layout/halva';
 @import './layout/treasure';
 @import './layout/recipes';
+@import './layout/footer';

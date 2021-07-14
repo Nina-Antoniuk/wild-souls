@@ -17,18 +17,20 @@
   }
 
   .lang {
-    margin-left: 162px;
+    position: absolute;
+    top: 75px;
+    right: 62px;
   }
 }
 
 .header-content-wrapper {
   position: absolute;
-  top: 41px;
+  top: 46px;
   left: 0;
   right: 0;
   display: flex;
-  margin-left: 165px;
   align-items: flex-start;
+  justify-content: space-between;
   padding-top: 31px;
   background-color: transparent;
 }
@@ -39,6 +41,12 @@
 }
 
 .page-nav__item {
+  & .link {
+    font-size: 15px;
+    line-height: 1.6;
+    text-transform: uppercase;
+  }
+
   &:not(:last-child) {
     margin-right: 42px;
   }
