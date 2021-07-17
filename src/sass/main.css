@@ -445,16 +445,32 @@ p {
   transition: transform 250ms linear, -webkit-transform 250ms linear;
 }
 
-.goods__slider .slick-current {
-  -webkit-transform: translateY(60px);
-          transform: translateY(60px);
+.goods__slide {
+  width: 360px;
+  background-color: #ec4646;
 }
 
 .goods__image-wrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 360px;
   height: 526px;
   border-radius: 275px;
   background-color: #b9f52d;
+}
+
+.goods__slide-title {
+  font-size: 36px;
+  line-height: 42px;
+  /* or 117% */
+  color: #000000;
 }
 
 .about {
@@ -855,11 +871,11 @@ p {
   margin-right: calc((100% / 10) * 1);
 }
 
-.slick-track {
+.ricepes .slick-track {
   height: 735px;
 }
 
-.slider__slide {
+.ricepes .slider__slide {
   width: 450px !important;
   height: 650px;
   margin-left: 40px;
@@ -870,18 +886,18 @@ p {
   transition: transform 250ms linear, -webkit-transform 250ms linear;
 }
 
-.slider__slide p {
+.ricepes .slider__slide p {
   margin-top: 43px;
   margin-bottom: 16px;
   text-transform: uppercase;
 }
 
-.slider__slide-title {
+.ricepes .slider__slide-title {
   font-size: 42px;
   line-height: 1.2;
 }
 
-.slick-current {
+.ricepes .slick-current {
   -webkit-transform: translateY(60px);
           transform: translateY(60px);
 }

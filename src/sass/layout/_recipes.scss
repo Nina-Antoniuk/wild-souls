@@ -12,11 +12,11 @@
   margin-right: calc((100% / 10) * 1);
 }
 
-.slick-track {
+.ricepes .slick-track {
   height: 735px;
 }
 
-.slider__slide {
+.ricepes .slider__slide {
   width: 450px !important;
   height: 650px;
   margin-left: 40px;
@@ -35,10 +35,6 @@
   }
 }
 
-.slick-current {
+.ricepes .slick-current {
   transform: translateY(60px);
 }
-
-// .slick-center {
-//   border: 2px solid red;
-// }
