@@ -104,22 +104,27 @@
 
     &:focus::-webkit-input-placeholder {
       opacity: 1;
+      color: #fff;
     }
 
     &:focus::-moz-placeholder {
       opacity: 1;
+      color: #fff;
     }
 
     &:focus:-ms-input-placeholder {
       opacity: 1;
+      color: #fff;
     }
 
     &:focus::-ms-input-placeholder {
       opacity: 1;
+      color: #fff;
     }
 
     &:focus::placeholder {
       opacity: 1;
+      color: #fff;
     }
   }
 }

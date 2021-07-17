@@ -1,13 +1,13 @@
 .treasures {
   position: relative;
-  padding-top: 251px;
+  padding-top: 300px;
   background-color: #f5afb9;
 
   &::before {
     content: '';
     position: absolute;
-    top: 4%;
-    left: 19%;
+    top: 10%;
+    left: 28%;
     z-index: 10;
     width: 282px;
     height: 282px;
@@ -17,7 +17,7 @@
 }
 
 .treasures__img-wrapp {
-  padding-left: 204px;
+  padding-left: 160px;
 
   &::before {
     content: '';

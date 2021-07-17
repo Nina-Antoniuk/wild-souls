@@ -2,6 +2,7 @@
 .DS_Store
 .vscode/
 .idea/
+to-do-list.txt
 
 # Logs
 logs

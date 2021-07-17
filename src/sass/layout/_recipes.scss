@@ -3,7 +3,6 @@
 
   & .container {
     justify-content: flex-end;
-    background-color: #fff;
     margin-bottom: 100px;
   }
 }
@@ -12,20 +11,28 @@
   flex-basis: calc((100% / 10) * 5);
   margin-right: calc((100% / 10) * 1);
 }
-.slider {
-  background-color: rgb(151, 228, 51);
-}
 
 .slick-track {
-  height: 800px;
-  background-color: rgb(151, 239, 255);
+  height: 735px;
 }
+
 .slider__slide {
-  width: 450px;
-  height: 400px;
+  width: 450px !important;
+  height: 650px;
   margin-left: 40px;
   margin-right: 40px;
   transition: transform 250ms linear;
+
+  & p {
+    margin-top: 43px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+  }
+
+  &-title {
+    font-size: 42px;
+    line-height: 1.2;
+  }
 }
 
 .slick-current {
