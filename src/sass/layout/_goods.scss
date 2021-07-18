@@ -18,6 +18,9 @@
 }
 
 .goods__slider {
+  height: 765px;
+  // background-color: rgb(105, 74, 219);
+
   .slick-track {
     height: 750px;
     justify-content: space-between;
@@ -26,9 +29,11 @@
 
 .goods__slide {
   position: relative;
+  height: 600px;
   margin-left: 40px;
   margin-right: 40px;
   transition: transform 250ms linear;
+  // background-color: rgb(240, 255, 103);
 
   &.slick-slide {
     width: 360px !important;
@@ -46,8 +51,16 @@
   width: 360px;
   height: 526px;
   border-radius: 275px;
-  background-color: rgb(52, 196, 160);
+  background-color: map-get($colors, 'green');
 }
+
+// .goods__slide:first-child {
+// & .goods__image-wrapp,
+// & .goods__slide-btn {
+// background-color: rgb(223, 83, 83);
+// }
+// }
+
 .goods__slide-title {
   font-size: 36px;
   line-height: 1.17;
@@ -56,11 +69,11 @@
 
 .goods__slide-content {
   position: absolute;
-  top: 55%;
+  top: 70%;
   left: 0;
 
   & p {
-    margin-bottom: 16px;
+    margin-bottom: 25px;
     font-weight: bold;
     font-size: 21px;
     line-height: 1.5;

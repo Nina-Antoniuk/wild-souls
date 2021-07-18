@@ -2,11 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 1000px;
+  height: 800px;
   padding-top: 150px;
   background-color: var(--main-bg-color);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
   background-image: url(../images/hero/hero.jpg);
 
   @media (min-device-pixel-ratio: 2),

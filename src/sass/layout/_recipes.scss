@@ -11,16 +11,21 @@
   flex-basis: calc((100% / 10) * 5);
   margin-right: calc((100% / 10) * 1);
 }
+.ricepes .slick-list {
+  padding: 0 0 !important;
+}
 
 .ricepes .slick-track {
-  height: 735px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 700px;
 }
 
 .ricepes .slider__slide {
-  width: 450px !important;
-  height: 650px;
-  margin-left: 40px;
-  margin-right: 40px;
+  width: 400px !important;
+  height: 600px;
   transition: transform 250ms linear;
 
   & p {
