@@ -6,13 +6,27 @@
   &::before {
     content: '';
     position: absolute;
-    top: 10%;
-    left: 18%;
+    top: 8%;
+    left: 9%;
     z-index: 10;
     width: 282px;
     height: 282px;
     background-repeat: no-repeat;
     background-image: url(../images/icons/treasure-lable.svg);
+  }
+}
+
+.treasures__btn {
+  width: 260px;
+  height: 30px;
+
+  & .mas {
+    top: 8%;
+  }
+
+  &-link {
+    display: block;
+    line-height: 1.8;
   }
 }
 
@@ -33,8 +47,8 @@
     animation-name: right-spin;
     -webkit-animation-duration: 250ms;
     animation-duration: 250ms;
-    -webkit-animation-delay: 500ms;
-    animation-delay: 500ms;
+    -webkit-animation-delay: 5000ms;
+    animation-delay: 5000ms;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
   }
@@ -53,8 +67,8 @@
     animation-name: left-spin;
     -webkit-animation-duration: 250ms;
     animation-duration: 250ms;
-    -webkit-animation-delay: 1000ms;
-    animation-delay: 1000ms;
+    -webkit-animation-delay: 6000ms;
+    animation-delay: 6000ms;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
   }

@@ -21,8 +21,8 @@
     animation-name: right-spin;
     -webkit-animation-duration: 250ms;
     animation-duration: 250ms;
-    -webkit-animation-delay: 500ms;
-    animation-delay: 500ms;
+    -webkit-animation-delay: 5000ms;
+    animation-delay: 5000ms;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
   }
@@ -37,13 +37,12 @@
     z-index: 0;
     background-color: #d16142;
     // background-image: url();
-    // transform: translateX(0);
     -webkit-animation-name: left-spin;
     animation-name: left-spin;
     -webkit-animation-duration: 250ms;
     animation-duration: 250ms;
-    -webkit-animation-delay: 1000ms;
-    animation-delay: 1000ms;
+    -webkit-animation-delay: 6000ms;
+    animation-delay: 6000ms;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
   }
@@ -58,4 +57,9 @@
   z-index: 100;
   top: 0;
   left: 0;
+}
+
+.about__btn {
+  width: 260px;
+  height: 30px;
 }

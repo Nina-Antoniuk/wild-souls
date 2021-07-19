@@ -1,0 +1,59 @@
+@mixin button($bcolor, $url, $x1, $y1, $bor, $col) {
+  background: $bcolor;
+  -webkit-mask: url($url);
+  mask: url($url);
+  -webkit-mask-size: $x1 $y1;
+  mask-size: $x1 $y1;
+  border: $bor;
+  color: $col;
+}
+
+.button-container {
+  position: relative;
+  margin-top: 46px;
+  border: 1px solid #000;
+  border-radius: 40px;
+  transition: 0.5s;
+  overflow: hidden;
+
+  .content-button {
+    width: 102%;
+    height: 100%;
+    text-align: center;
+    padding: 0;
+    text-transform: uppercase;
+    border-radius: 40px;
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer;
+
+    @include button(
+      #000,
+      'https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png',
+      2300%,
+      100%,
+      none,
+      #fff
+    );
+
+    -webkit-animation: ani2 0.7s steps(22) forwards;
+    animation: ani2 0.7s steps(22) forwards;
+
+    &:hover,
+    &:focus {
+      -webkit-animation: ani 0.7s steps(22) forwards;
+      animation: ani 0.7s steps(22) forwards;
+    }
+  }
+}
+
+.mas {
+  position: absolute;
+  top: 12%;
+  width: 101%;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+  overflow: hidden;
+}
