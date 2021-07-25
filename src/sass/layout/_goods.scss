@@ -19,13 +19,11 @@
 
 .goods__slider {
   height: 765px;
-  background-color: rgb(105, 74, 219);
 
   .slick-track {
     width: 600px;
     height: 750px;
     justify-content: space-between;
-    background-color: rgb(72, 255, 255);
   }
 }
 
@@ -35,14 +33,13 @@
   margin-left: 40px;
   margin-right: 40px;
   transition: transform 250ms linear;
-  background-color: rgb(240, 255, 103);
 
   &.slick-slide {
     width: 360px !important;
   }
 
   &:nth-child(2n - 1) {
-    transform: translateY(148px);
+    transform: translateY(120px);
   }
 }
 
