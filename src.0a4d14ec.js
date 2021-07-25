@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/hero/hero.jpg":[["hero.0917aa6b.jpg","gEAR"],"gEAR"],"./../images/hero/hero@2x.jpg":[["hero@2x.e185f8d2.jpg","UqBl"],"UqBl"],"./../images/icons/lips.svg":[["lips.52ac0129.svg","gHyF"],"gHyF"],"./../images/icons/store-lable.svg":[["store-lable.300573bd.svg","NYpd"],"NYpd"],"./../images/icons/postcard.svg":[["postcard.3d74351b.svg","A69I"],"A69I"],"./../images/icons/treasure-lable.svg":[["treasure-lable.c86fb218.svg","cBzZ"],"cBzZ"],"./../images/icons/cactus.svg":[["cactus.283fae78.svg","gIYz"],"gIYz"],"./../images/icons/rock.svg":[["rock.2ee50f4a.svg","z8jc"],"z8jc"],"./../images/icons/footer-lips.svg":[["footer-lips.1619f9eb.svg","oZJ6"],"oZJ6"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/wild-souls/src.607d91e6.js.map
+//# sourceMappingURL=/wild-souls/src.0a4d14ec.js.map
