@@ -21,7 +21,15 @@
 
 .halva__btn {
   width: 260px;
-  height: 30px;
+
+  & .mas {
+    top: 8%;
+  }
+
+  &-link {
+    display: block;
+    line-height: 1.8;
+  }
 }
 
 .halva__aside-wrapp {

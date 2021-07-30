@@ -1,4 +1,4 @@
-//animation for show image //add animation to hide image
+//animation for show image
 
 @-webkit-keyframes right-spin {
   from {
@@ -17,6 +17,48 @@
 
   to {
     transform: translate(-80px, -20px) rotate(-15deg);
+  }
+}
+
+@-webkit-keyframes left-spin {
+  from {
+    transform: translate(0) rotate(0);
+  }
+
+  to {
+    transform: translate(100px, -30px) rotate(15deg);
+  }
+}
+
+@keyframes left-spin {
+  from {
+    transform: translate(0) rotate(0);
+  }
+
+  to {
+    transform: translate(100px, -30px) rotate(15deg);
+  }
+}
+
+//animation to hide image
+
+@-webkit-keyframes spin-from-right {
+  from {
+    transform: translate(-80px, -20px) rotate(-15deg);
+  }
+
+  to {
+    transform: translateX(0) rotate(0);
+  }
+}
+
+@keyframes spin-from-right {
+  from {
+    transform: translate(-80px, -20px) rotate(-15deg);
+  }
+
+  to {
+    transform: translateX(0) rotate(0);
   }
 }
 

@@ -88,3 +88,15 @@
     background-color: #{$color};
   }
 }
+
+.goods__slide-btn {
+  cursor: pointer;
+  transition: background-color 250ms linear, color 250ms linear;
+}
+
+@each $num, $color in (1, #496651) (2, #68332a) (3, #5f6381) (4, #91702a) {
+  .goods__slide:nth-child(#{$num}) .goods__slide-btn:hover {
+    background-color: #{$color};
+    color: #fff;
+  }
+}

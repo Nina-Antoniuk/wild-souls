@@ -2,7 +2,6 @@ const aboutSectionEl = document.querySelector(".about");
 const aboutImageWrappEl = document.querySelector('.about__image-wrapp');
 
 const handleObserver = (entries) => {
-  console.log("entries", entries);
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       aboutImageWrappEl.classList.add('decoration');

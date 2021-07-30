@@ -13,13 +13,16 @@
           </p>
           <div class="halva__btn button-container">
             <span class="mas">Discover them now!</span>
-            <button class="content-button" id='work' type="button" name="Hover">Discover them now!</button>
+            <a class="halva__btn-link content-button">Discover them now!</a>
           </div>
-          <!-- <button class="halva__btn btn" type="btn">Discover them now!</button> -->
         </div>
 
         <div class="description-card__img-wrapp">
-          <img loading="lazy" src="./images/halva/halva.png" alt="almond" />
+          <picture>
+            <source srcset="./images/halva/halva.webp 1x, ./images/halva/halva@2x.webp 2x">
+            <source srcset="./images/halva/halva.png 1x, ./images/halva/halva@2x.png">
+            <img loading="lazy" src="./images/halva/halva.png" alt="almond" />
+          </picture>
         </div>
       </div>
     </div>
@@ -31,10 +34,8 @@
 
       <div class="halva__aside-btn button-container">
         <span class="mas">Discover them now!</span>
-        <button class="content-button" id='work' type="submit" name="Hover">Discover them now!</button>
-      </div>
-      <!-- <button class="halva__aside-btn btn" type="submit">Discover them now!</button> -->
-      
+        <button class="content-button" type="submit">Discover them now!</button>
+      </div>      
     </div>
   </div>
 </section>
