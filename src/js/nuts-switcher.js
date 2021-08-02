@@ -77,7 +77,7 @@ function makeMarkupDescriptionCard(el) {
         </div>
 
         <div class="description-card__img-wrapp">
-           <img loading="lazy" src="${el.image}" alt="almond" width="248" height="256"/>
+           <img loading="lazy" src="${el.image}" alt="almond" />
         </div>
       </div>`;
 }

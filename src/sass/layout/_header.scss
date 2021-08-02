@@ -53,7 +53,20 @@
 .auth-wrapp {
   display: flex;
 
-  & a:not(:last-child) {
+  & a,
+  & .auth-btn:not(:last-child) {
     margin-right: 42px;
+  }
+}
+
+.auth-btn {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  transition: color 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: #fff;
   }
 }
