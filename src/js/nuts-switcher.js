@@ -10,10 +10,10 @@ const nutsList = [
   }, {
     name: 'Hazelnut',
     title: 'Tasty Hazelnut',
-    bg: '#72a080',
+    bg: '#fecf6b',
     description: 'Hazelnut. All the treasures are hidden in a chest. Respectively, our treasures are enclosed intheir Wild shell.',
     price: '6.00',
-    image: '',
+    image: 'https://www.nutella.com/bc/sites/nutella20_bc/files/styles/scale_width_475/public/2020-07/hazelnut-single.png?t=1628857953',
     alt: 'big hazelnut'
   },
   {
@@ -22,24 +22,24 @@ const nutsList = [
     bg: '#abafd6',
     description: 'Peanut. All the treasures are hidden in a chest. Respectively, our treasures are enclosed intheir Wild shell.',
     price: '3.00',
-    image: '../images/nuts/peanuts/peanuts.png',
+    image: 'http://pngimg.com/uploads/peanut/peanut_PNG3.png',
     alt: 'peanuts'
   }, {
     name: 'Sesame',
     title: 'Treasure Sesame',
-    bg: '#daad8f',
+    bg: '#839c3e',
     description: 'Sesame. All the treasures are hidden in a chest. Respectively, our treasures are enclosed intheir Wild shell.',
     price: '5.00',
-    image: '',
+    image: 'https://terrabites.eu/sites/default/files/images/2019-05/Sesame5.png',
     alt: 'sesame'
   },
   {
     name: 'Cashew',
     title: 'The Great Cashew',
-    bg: '#fecf6b',
+    bg: '#72a080',
     description: 'Cashew. All the treasures are hidden in a chest. Respectively, our treasures are enclosed intheir Wild shell.',
     price: '4.00',
-    image: '../images/nuts/cashew/cashew.png',
+    image: 'https://pngimg.com/uploads/cashew/cashew_PNG21.png',
     alt: 'cashew'
   }
 ]
@@ -77,7 +77,7 @@ function makeMarkupDescriptionCard(el) {
         </div>
 
         <div class="description-card__img-wrapp">
-           <img loading="lazy" src="${el.image}" alt="almond" />
+           <img class="img" loading="lazy" src="${el.image}" alt=${el.name} />
         </div>
       </div>`;
 }

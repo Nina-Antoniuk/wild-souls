@@ -16,6 +16,7 @@
 
   & .description-card__img-wrapp {
     background-color: #a5483d;
+    overflow: hidden;
   }
 }
 
@@ -57,6 +58,7 @@
     font-size: 40px;
     line-height: 1.26;
     border: none;
+    cursor: pointer;
     background-color: transparent;
   }
 

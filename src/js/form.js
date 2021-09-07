@@ -19,3 +19,16 @@ function closesBackdrop() {
 }
   
 //addprevent defoult for form
+
+// function formSubmitHandler(e) {
+//   e.preventDefault();
+//   const formData = new FormData(e.currentTarget);
+    
+//   console.log(formData);
+  
+//   formData.forEach((x, y) => {
+//     console.log('x', x);
+//     console.log('y', y);
+//   })
+ 
+// }
