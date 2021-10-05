@@ -15,58 +15,76 @@
     line-height: 24px;
   }
 
-  .lang {
+  &::before {
+    content: '';
     position: absolute;
-    top: 75px;
-    right: 62px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 400px;
+    background-color: var(--main-bg-color);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url(../images/hero/hero.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero/hero@2x.jpg);
+    }
+
+    @media screen and (min-width: 768px) {
+      height: 600px;
+      background-size: 100% 100%;
+    }
+
+    @media screen and (min-width: 1200px) {
+      height: 800px;
+    }
   }
 }
 
 .header-content-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+    align-items: start;
+    max-width: 90%;
+    padding-top: 31px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+  }
+}
+
+.page-header__mobile-menu-wrapper {
   position: absolute;
-  top: 46px;
+  top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
+  z-index: 50;
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding-top: 31px;
-  background-color: transparent;
-}
+  flex-direction: column;
+  align-items: center;
+  opacity: 1;
+  height: 100vh;
+  padding-top: 30px;
+  padding-left: 20px;
+  background-color: rgba(243, 221, 21, 0.74);
 
-.page-nav,
-.page-nav__list {
-  display: flex;
-}
-
-.page-nav__item {
-  & .link {
-    line-height: 1.6;
-    text-transform: uppercase;
-  }
-
-  &:not(:last-child) {
-    margin-right: 42px;
-  }
-}
-
-.auth-wrapp {
-  display: flex;
-
-  & a,
-  & .auth-btn:not(:last-child) {
-    margin-right: 42px;
-  }
-}
-
-.auth-btn {
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-  transition: color 250ms linear;
-
-  &:hover,
-  &:focus {
-    color: #fff;
+  &.is-hidden {
+    // display: none;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
   }
 }

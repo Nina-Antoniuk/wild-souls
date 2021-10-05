@@ -5,7 +5,12 @@
 @import './base/common';
 
 //component
+@import './components/menu-btn.scss';
+@import './components/mobile-menu.scss';
+@import './components/close-mobile-btn.scss';
+@import './components/page-nav.scss';
 @import './components/logo';
+@import './components/authorisation.scss';
 @import './components/form';
 @import './components/cart';
 @import './components/animations';

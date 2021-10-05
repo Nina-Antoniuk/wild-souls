@@ -1,15 +1,28 @@
 .description-card {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+  }
 
   &__content {
-    flex-basis: 234px;
-    margin-right: 47px;
+    @media screen and (min-width: 768px) {
+      flex-basis: 50%;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: 234px;
+      margin-right: 47px;
+    }
   }
 
   .description-card__title {
-    margin-bottom: 20px;
-    font-size: 42px;
     line-height: 1.2;
+    font-size: 25px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
   }
 
   .description-card__price {
@@ -20,11 +33,21 @@
   }
 
   .description-card__img-wrapp {
-    width: 350px;
-    height: 433px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 175px;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      flex-basis: 45%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100px;
+      overflow: hidden;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 350px;
+      height: 433px;
+      border-radius: 175px;
+    }
   }
 }

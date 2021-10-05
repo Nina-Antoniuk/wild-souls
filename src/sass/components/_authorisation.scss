@@ -1,0 +1,40 @@
+.auth-wrapp {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: start;
+    flex-basis: 20%;
+    margin-left: auto;
+
+    & a,
+    & .auth-btn {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    & a,
+    & .auth-btn:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    & a,
+    & .auth-btn:not(:last-child) {
+      margin-right: 42px;
+    }
+  }
+}
+
+.auth-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: color 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
+}

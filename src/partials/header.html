@@ -1,6 +1,43 @@
 <header class="page-header">
   <p>Free shipping in Greece for Wild orders over 50 euros!</p>
   <div class="header-content-wrapper container">
+
+    <button id="menu-btn-js" class="menu-btn" aria-label="open menu button">
+      <svg class="icon">
+        <use href="./images/icons/sprite.svg#icon-menu"></use>
+      </svg>
+    </button>
+
+    <a href="" class="logo logo--mobile">
+      <svg class="icon">
+        <use href="./images/icons/sprite.svg#icon-logo"></use>
+      </svg>
+    </a>
+
+    <div class="page-header__mobile-menu-wrapper is-hidden" id="mobile-menu-js">
+      <!-- <div id="mobile-menu-js" class="mobile-menu is-hidden"> -->
+        <button id="close-menu-btn-js" class="close-menu-btn" aria-label="close menu button">X
+          <!-- <svg class="icon">
+                <use href="./images/icons/sprite.svg#icon-menu"></use>
+              </svg> -->
+        </button>
+      
+        <nav class="mobile-nav">
+          <ul class="mobile-nav__list list">
+            <li class="mobile-nav__item"><a class="link" href="#goods">Products</a></li>
+            <li class="mobile-nav__item"><a class="link" href="#about">Who we are</a></li>
+            <li class="mobile-nav__item"><a class="link" href="#store">Concept Store</a></li>
+          </ul>
+        </nav>
+      
+        <div class="mobile-auth-wrapp">
+          <a class="link" href="#recipes">Recipes</a>
+          <button class="auth-btn login-btn" type="button">Log In</button>
+          <button class="auth-btn cart-btn" type="button">Cart</button>
+        </div>
+      <!-- </div> -->
+    </div>
+
     <nav class="page-nav">
       <ul class="page-nav__list list">
         <li class="page-nav__item"><a class="link" href="#goods">Products</a></li>
@@ -20,5 +57,4 @@
       <button class="auth-btn cart-btn" type="button">Cart</button>
     </div>
   </div>
-  <span class="lang">EN</span>
 </header>

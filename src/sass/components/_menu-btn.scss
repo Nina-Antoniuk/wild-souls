@@ -1,0 +1,15 @@
+.menu-btn {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+
+  & .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
