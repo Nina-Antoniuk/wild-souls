@@ -1,21 +1,26 @@
-.nuts {
-  & .container {
-    @media screen and (min-width: 768px) {
-      // display: flex;
-      // justify-content: space-between;
-    }
-  }
-}
+// .nuts {
+//   & .container {
+//     @media screen and (min-width: 768px) {
+//       // display: flex;
+//       // justify-content: space-between;
+//     }
+//   }
+// }
 
 .nuts__content {
+  padding-top: 60px;
+  padding-left: 10px;
+  padding-bottom: 40px;
+  text-align: left;
   background-color: #be5a4b;
 
   @media screen and (min-width: 768px) {
-    flex-basis: 60%;
+    flex-basis: 63%;
     padding-left: 20px;
   }
 
   & .section__title {
+    text-align: left;
     margin-bottom: 44px;
   }
 
@@ -25,7 +30,7 @@
 }
 
 .nuts__btn {
-  width: 187px;
+  width: 260px;
   height: 30px;
 
   & .mas {
@@ -47,7 +52,7 @@
     padding-left: 103px;
 
     & p {
-      width: 255px;
+      // width: 255px;
       margin-top: 88px;
       margin-bottom: 90px;
       font-weight: normal;
@@ -58,7 +63,7 @@
 .nuts__list {
   &-item {
     position: relative;
-    width: 255px;
+    // width: 255px;
     border-bottom: 1px solid #000;
 
     @media screen and (max-width: 767.98px) {

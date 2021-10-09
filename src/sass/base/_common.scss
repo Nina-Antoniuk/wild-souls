@@ -69,7 +69,7 @@ p {
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: 80px;
+    padding-top: 100px;
     padding-bottom: 80px;
   }
 
@@ -94,12 +94,11 @@ p {
     @media screen and (min-width: 768px) {
       font-size: 40px;
       -moz-text-align-last: left;
-      text-align-last: left;
     }
 
     @media screen and (min-width: 1200px) {
       margin-bottom: 12px;
-      font-size: 85px;
+      font-size: 70px;
     }
   }
 }
@@ -123,12 +122,13 @@ p {
 
   &__info {
     position: relative;
-    padding-top: 90px;
-    padding-bottom: 40px;
+
     border-radius: 0 220px 0 0;
 
     @media screen and (min-width: 1200px) {
-      flex-basis: calc(((100% - 15px) / 10) * 6);
+      padding-top: 90px;
+      padding-bottom: 40px;
+      // flex-basis: calc(((100% - 15px) / 10) * 6);
       padding-bottom: 74px;
     }
   }
@@ -153,7 +153,8 @@ p {
   }
 
   &__discription {
-    flex-basis: calc((100% / 10) * 4 - 80px);
+    // flex-basis: calc((100% / 10) * 4 - 80px);
+    flex-basis: 40%;
     flex-direction: column;
     display: flex;
     justify-content: center;
