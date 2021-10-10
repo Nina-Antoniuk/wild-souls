@@ -5,9 +5,7 @@ const handleObserver = (entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       aboutImageWrappEl.classList.add('decoration');
-    } else {
-      aboutImageWrappEl.classList.remove('decoration');
-    }
+    } 
   });
 };
 
@@ -21,10 +19,8 @@ const storeImageWrappEl = document.querySelector('.store__img-wrapp');
 const storeHandler = entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      storeImageWrappEl.classList.add('store-decoration');
-    } else {
-      storeImageWrappEl.classList.remove('store-decoration');
-    }
+      storeImageWrappEl.classList.add('decoration');
+    } 
   })
 }
 
@@ -37,9 +33,7 @@ const treasuresImageWrappEl = document.querySelector('.treasures__img-wrapp');
 function treasuresHandler(entries) {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      treasuresImageWrappEl.classList.add('treasures-decoration');
-    } else {
-      treasuresImageWrappEl.classList.remove('treasures-decoration')
+      treasuresImageWrappEl.classList.add('decoration');
     }
   })
 }

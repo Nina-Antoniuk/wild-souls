@@ -2,30 +2,14 @@
   background-color: #be5a4b;
   padding-bottom: 40px;
 
-  &__logo-wrapp {
-    padding: 120px 0;
-    text-align: center;
-  }
-
-  & .container {
-    justify-content: space-between;
-    padding-left: 15px;
-  }
-
-  &__content,
-  &__lists {
-    flex-basis: calc(((100% - 15px) / 10) * 5);
-  }
-
-  &__title {
-    font-size: 85px;
-    line-height: 1.1;
-  }
-
   & p {
-    font-size: 32px;
+    margin-bottom: 20px;
+    font-size: 18px;
     line-height: 1.2;
-    margin-bottom: 21px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 32px;
+    }
   }
 
   & .copyright {
@@ -44,21 +28,48 @@
   }
 }
 
-.footer__form {
-  width: 445px;
-  margin-bottom: 110px;
-  position: relative;
+.footer__logo-wrapp {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
 
-  &:focus-within .footer__input-lable,
-  .footer__input:not(:placeholder-shown) + .footer__input-lable {
-    transform: translateY(-25px);
+  @media screen and (min-width: 768px) {
+    padding: 40px 0;
+  }
+}
+
+.footer__title {
+  font-size: 20px;
+  line-height: 1.1;
+
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 85px;
+  }
+}
+
+.footer__form {
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 1200px) {
+    width: 445px;
+    margin-bottom: 20px;
+    position: relative;
+
+    &:focus-within .footer__input-lable,
+    .footer__input:not(:placeholder-shown) + .footer__input-lable {
+      transform: translateY(-25px);
+    }
   }
 
   .footer__input-lable {
     position: absolute;
     top: 0;
     left: 0;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.5;
     transition: color 250ms linear, transform 250ms linear;
   }
@@ -132,6 +143,10 @@
 .payment {
   display: flex;
   margin-bottom: 20px;
+
+  @media screen and (max-width: 767.98px) {
+    justify-content: center;
+  }
 }
 
 .payment__item {
@@ -146,57 +161,90 @@
 }
 
 .footer__lists {
+  margin-bottom: 20px;
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  height: 650px;
-  margin-bottom: 70px;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: 50%;
+    height: 350px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 450px;
+  }
 }
 
 .footer__list-wrapp {
-  width: 255px;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 
-  &:nth-child(n + 3) {
-    margin-left: 15px;
+  @media screen and (min-width: 1200px) {
+    width: 255px;
+
+    &:nth-child(n + 3) {
+      margin-left: 15px;
+    }
   }
 }
 
 .footer__list-title {
-  margin-bottom: 21px;
-  font-size: 32px;
-  line-height: 38px;
+  margin-bottom: 15px;
+  line-height: 1.2;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 20px;
+    font-size: 32px;
+  }
 }
 
-.footer-list {
-  &__item {
+.footer-list__item {
+  @media screen and (min-width: 1200px) {
     font-size: 16px;
     line-height: 1.5;
     text-transform: uppercase;
-  }
 
-  &__item:not(:last-child) {
-    margin-bottom: 21px;
+    &__item:not(:last-child) {
+      margin-bottom: 21px;
+    }
   }
 }
 
+.footer-list__item-link {
+  text-align: left;
+}
+
 .generals {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 70px;
+  margin-top: 20px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .generals__item {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 
   &::before {
     content: '';
-    width: 130px;
-    height: 105px;
-    margin-right: 100px;
+    width: 80px;
+    height: 55px;
+    margin-left: auto;
     background-repeat: no-repeat;
+    background-size: contain;
     background-position: center center;
+
+    @media screen and (min-width: 1200px) {
+      width: 130px;
+      height: 105px;
+    }
   }
 
   &:first-child::before {
@@ -212,9 +260,21 @@
   }
 
   & .icon {
-    width: 160px;
-    height: 63px;
     display: block;
+    margin-left: 30px;
+    margin-right: auto;
+    width: 100px;
+    height: 50px;
     fill: #000;
+
+    @media screen and (min-width: 768px) {
+      width: 120px;
+      height: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 160px;
+      height: 63px;
+    }
   }
 }

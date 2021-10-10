@@ -1,76 +1,32 @@
 .store {
   position: relative;
-  padding-top: 60px;
   background-color: #f5afb9;
 
-  // @media screen and (min-width: 1200px) {
-  //   padding-top: 251px;
-  // }
+  &::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 15%;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/icons/store-lable.svg);
 
-  // &::before {
-  //   @media screen and(min-width: 768px) {
-  //     content: '';
-  //     position: absolute;
-  //     top: 2%;
-  //     left: 35%;
-  //     z-index: 10;
-  //     width: 120px;
-  //     height: 120px;
-  //     background-repeat: no-repeat;
-  //     background-size: contain;
-  //     background-image: url(../images/icons/store-lable.svg);
-  //   }
+    @media screen and(min-width: 768px) {
+      width: 80px;
+      height: 80px;
+    }
 
-  //   @media screen and (min-width: 1200px) {
-  //     top: 5%;
-  //     left: 7%;
-  //     width: 200px;
-  //     height: 200px;
-  //   }
-  // }
+    @media screen and (min-width: 1200px) {
+      top: 7%;
+      left: 15%;
+      width: 120px;
+      height: 120px;
+    }
+  }
 }
-
-// .store-decoration {
-//   &::before {
-//     content: '';
-//     width: 486px;
-//     height: 612px;
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     z-index: 2;
-//     background-color: #b0897e;
-//     // background-image: url();
-//     -webkit-animation-name: right-spin;
-//     animation-name: right-spin;
-//     -webkit-animation-duration: 250ms;
-//     animation-duration: 250ms;
-//     -webkit-animation-delay: 300ms;
-//     animation-delay: 300ms;
-//     -webkit-animation-fill-mode: forwards;
-//     animation-fill-mode: forwards;
-//   }
-
-//   &::after {
-//     content: '';
-//     width: 486px;
-//     height: 612px;
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     z-index: 1;
-//     background-color: #d16142;
-//     background-image: url();
-//     -webkit-animation-name: left-spin;
-//     animation-name: left-spin;
-//     -webkit-animation-duration: 300ms;
-//     animation-duration: 300ms;
-//     -webkit-animation-delay: 500ms;
-//     animation-delay: 500ms;
-//     -webkit-animation-fill-mode: forwards;
-//     animation-fill-mode: forwards;
-//   }
-// }
 
 .store__btn-link {
   display: block;

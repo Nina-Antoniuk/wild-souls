@@ -3,6 +3,8 @@
 
 //base
 @import './base/common';
+@import './base/container';
+@import './base/section';
 
 //component
 @import './components/menu-btn.scss';
@@ -14,6 +16,7 @@
 @import './components/form';
 @import './components/cart';
 @import './components/animations';
+@import './components/decoration';
 @import './components/discription-card';
 @import './components/content-btn';
 @import './components/socials';

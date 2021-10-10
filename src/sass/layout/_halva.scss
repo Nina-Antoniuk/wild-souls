@@ -7,26 +7,13 @@
   }
 
   &__content {
-    padding-top: 60px;
-    padding-left: 10px;
-    padding-bottom: 40px;
-    text-align: left;
     background-color: #abafd6;
-
-    @media screen and (min-width: 768px) {
-      flex-basis: 60%;
-      padding-left: 20px;
-    }
   }
 
   & .section__title {
     text-align: left;
     margin-bottom: 44px;
   }
-
-  // & .description-card__title {
-  //   margin-bottom: 62px;
-  // }
 }
 
 .halva__btn {
@@ -48,48 +35,60 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 100px;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 20px;
   background-color: #ec4844;
+
+  @media screen and (max-width: 767.98px) {
+    margin-top: 20px;
+  }
 
   @media screen and (min-width: 768px) {
     flex-basis: 38%;
   }
 
   @media screen and (min-width: 1200px) {
-    padding-left: 58px;
-    padding-right: 58px;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-bottom: 55px;
   }
 
   &::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/icons/postcard.svg);
+
     @media screen and (min-width: 768px) {
-      content: '';
-      position: absolute;
       top: 45px;
-      left: 50%;
-      transform: translateX(-50%);
       width: 50px;
       height: 150px;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-image: url(../images/icons/postcard.svg);
     }
 
     @media screen and (min-width: 1200px) {
-      top: 25px;
+      top: 20px;
       width: 147px;
-      height: 327px;
+      height: 300px;
     }
   }
 
   & p {
+    font-size: 25px;
     font-weight: bold;
-    font-size: 42px;
     line-height: 1.2;
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+      font-size: 42px;
+    }
   }
 }
 
