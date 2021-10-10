@@ -93,7 +93,7 @@ p {
 
     @media screen and (min-width: 768px) {
       font-size: 40px;
-      -moz-text-align-last: left;
+      text-align: left;
     }
 
     @media screen and (min-width: 1200px) {
@@ -110,6 +110,7 @@ p {
 
   @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: space-around;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
@@ -119,21 +120,20 @@ p {
   @media screen and (min-width: 1200px) {
     max-width: 1110px;
   }
+}
 
-  &__info {
-    position: relative;
+.container__info {
+  position: relative;
+  border-radius: 0 220px 0 0;
 
-    border-radius: 0 220px 0 0;
-
-    @media screen and (min-width: 1200px) {
-      padding-top: 90px;
-      padding-bottom: 40px;
-      // flex-basis: calc(((100% - 15px) / 10) * 6);
-      padding-bottom: 74px;
-    }
+  @media screen and (min-width: 1200px) {
+    padding-top: 90px;
+    padding-bottom: 40px;
+    // flex-basis: calc(((100% - 15px) / 10) * 6);
+    padding-bottom: 74px;
   }
 
-  &__info::before {
+  &::before {
     content: '';
     position: absolute;
     top: 0;
@@ -147,25 +147,68 @@ p {
       width: 55px;
     }
   }
+}
 
-  &__aside {
-    flex-basis: calc((100% / 10) * 4);
+.container__discription {
+  @media screen and (min-width: 768px) {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  &__discription {
-    // flex-basis: calc((100% / 10) * 4 - 80px);
-    flex-basis: 40%;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
+  & p {
+    margin-bottom: 10px;
 
-    & .btn {
-      width: 260px;
-      height: 24px;
+    @media screen and (min-width: 768px) {
+      margin-top: 15;
+      margin-bottom: 15px;
+      font-size: 17px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 30;
+      margin-bottom: 30px;
+      font-size: 19px;
     }
   }
+}
 
-  &__image-wrapp {
+.container__btn {
+  width: 260px;
+  height: 30px;
+}
+
+.container__aside {
+  flex-basis: calc((100% / 10) * 4);
+}
+
+.container__image-wrapp {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: 40%;
+    display: flex;
+    // justify-content: center; //dependent from animation
+    padding-left: 20px; //dependent from animation
     position: relative;
   }
+}
+
+.container__picture {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 250px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 450px;
+  }
+}
+
+.container__img {
+  position: relative;
+  z-index: 100;
 }
