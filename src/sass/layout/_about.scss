@@ -2,6 +2,10 @@
   position: relative;
   background-color: var(--main-bg-color);
 
+  @media screen and (min-width: 1200px) {
+    padding-top: 120px;
+  }
+
   &::before {
     content: '';
     position: absolute;
