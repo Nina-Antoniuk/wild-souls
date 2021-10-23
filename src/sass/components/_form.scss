@@ -55,9 +55,10 @@
   // opacity: 0;
   width: 500px;
   padding: 10px 30px;
-  border: 20px solid #fff;
-  border-radius: 40px;
+  border: 20px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
   background-color: #be5a4b;
+  background-clip: padding-box;
 }
 
 .form-title {

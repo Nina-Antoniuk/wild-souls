@@ -1,5 +1,27 @@
 .close-menu-btn {
   position: absolute;
-  top: 20px;
-  right: 30px;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.568);
+  transition: background-color 250ms linear;
+
+  & .icon {
+    width: 40px;
+    height: 40px;
+    fill: #000;
+    transition: fill 250ms linear;
+  }
+
+  &:focus {
+    background-color: #fff;
+  }
+
+  &:focus .icon {
+    fill: #abafd6;
+  }
 }
