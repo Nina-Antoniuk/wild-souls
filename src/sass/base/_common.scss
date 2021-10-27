@@ -12,6 +12,10 @@ body {
   line-height: 1.5;
   color: #000000;
   background-color: var(--main-bg-color);
+
+  &.hidden {
+    overflow-y: hidden;
+  }
 }
 
 h1,
@@ -57,7 +61,4 @@ p {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
-}
-.hidden {
-  overflow-y: hidden;
 }

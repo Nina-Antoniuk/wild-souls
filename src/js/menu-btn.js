@@ -1,22 +1,32 @@
 import refs from './refs';
 
 export function buttonClikHandler() {
-  toggleMenu();
-  toggleBody();
+  showMenu();
+  hideBody();
   refs.mobileMenu.addEventListener('click', closeMobileMenu)
   refs.closeMobileMenuBtn.addEventListener('click', closeMobileMenu);
 }
 
 function closeMobileMenu() {
-  toggleMenu();
-  toggleBody();
+  hideMenu();
+  showBody();
   refs.closeMobileMenuBtn.removeEventListener('click', closeMobileMenu)
 }
 
-function toggleBody() {
-  refs.body.classList.toggle('hidden');
+function showBody() {
+  refs.body.classList.remove('hidden');
 }
 
-function toggleMenu() {
-  refs.mobileMenu.classList.toggle('is-hidden');
+function hideBody() {
+  refs.body.classList.add('hidden');
 }
+
+function showMenu() {
+  refs.mobileMenu.classList.remove('is-hidden');
+}
+
+function hideMenu() {
+  refs.mobileMenu.classList.add('is-hidden');
+}
+
+

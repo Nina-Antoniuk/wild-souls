@@ -8,12 +8,13 @@
       </svg>
     </button>
 
-    <a href="" class="logo logo--mobile">
+    <a href="" class="logo logo--mobile"> <!--logo--mobile?-->
       <svg class="icon">
         <use href="./images/icons/sprite.svg#icon-logo"></use>
       </svg>
     </a>
 
+    <!-- mobile menu -->
     <div class="page-header__mobile-menu-wrapper is-hidden" id="mobile-menu-js">
       <div class="mobile-menu ">
         <button id="close-menu-btn-js" class="close-menu-btn" aria-label="close menu button">
@@ -21,7 +22,7 @@
             <use href="./images/icons/sprite.svg#icon-menu-close"></use>
           </svg>
         </button>
-      
+        
         <nav class="mobile-nav">
           <ul class="mobile-nav__list list">
             <li class="mobile-nav__item"><a class="page-header__mobile-link link" href="#goods">Products</a></li>
@@ -29,14 +30,14 @@
             <li class="mobile-nav__item"><a class="page-header__mobile-link link" href="#store">Concept Store</a></li>
           </ul>
         </nav>
-      
+        
         <div class="mobile-auth-wrapp">
-          <a class="page-header__mobile-link link" href="#recipes">Recipes</a>
-          <button class="page-header__mobile-link auth-btn login-btn" type="button">Log In</button>
-          <button class="page-header__mobile-link auth-btn cart-btn" type="button">Cart</button>
+          <button class="page-header__mobile-link auth-btn mobile-menu__login-btn-js" type="button">Log In</button>
+          <button class="page-header__mobile-link auth-btn mobile-menu__cart-btn-js" type="button">Cart</button>
         </div>
       </div>
     </div>
+    <!-- mobile menu -->
 
     <nav class="page-nav">
       <ul class="page-nav__list list">
@@ -52,9 +53,8 @@
     </nav>
     
     <div class="auth-wrapp">
-      <a class="link" href="#recipes">Recipes</a>
-      <button class="auth-btn login-btn" type="button" >Log In</button>
-      <button class="auth-btn cart-btn" type="button">Cart</button>
+      <button class="auth-btn login-btn-js" type="button" >Log In</button>
+      <button class="auth-btn cart-btn-js" type="button">Cart</button>
     </div>
   </div>
 </header>

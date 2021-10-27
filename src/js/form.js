@@ -1,34 +1,35 @@
-const backdropEl = document.querySelector('.backdrop');
-const loginEl = document.querySelector('.login-btn');
+import refs from './refs';
 
-
-loginEl.addEventListener('click', opensBackdrop);
-
-function opensBackdrop() {
-  backdropEl.classList.remove('is-hidden');
-  document.body.classList.add('hidden');
-  
-  const formCloseBtn = document.querySelector('.backdrop__close-btn');
-  formCloseBtn.addEventListener('click', closesBackdrop);
+export function opensBackdrop() {
+  refs.formCloseBtn = document.querySelector('.backdrop__close-btn');
+  refs.backdropEl.classList.remove('is-hidden');
+  window.addEventListener('keydown', closeBackdropByEsc);
+  refs.backdropEl.addEventListener('click', closeBackdropByClick);
+  refs.formCloseBtn.addEventListener('click', closesBackdrop);
 }
 
 function closesBackdrop() {
-    backdropEl.classList.add('is-hidden');
-  document.body.classList.remove('hidden');
-  formCloseBtn.removeEventListener('click', closesBackdrop);
+  refs.formCloseBtn.removeEventListener('click', closesBackdrop);
+  refs.backdropEl.removeEventListener('click', closeBackdropByClick);
+  window.removeEventListener('keydown', closeBackdropByEsc);
+  refs.backdropEl.classList.add('is-hidden');
 }
-  
-//addprevent defoult for form
 
-// function formSubmitHandler(e) {
-//   e.preventDefault();
-//   const formData = new FormData(e.currentTarget);
-    
-//   console.log(formData);
-  
-//   formData.forEach((x, y) => {
-//     console.log('x', x);
-//     console.log('y', y);
-//   })
- 
-// }
+function closeBackdropByEsc(e) {
+  if (e.key === 'Escape') {
+    closesBackdrop();
+  }
+}
+
+function closeBackdropByClick(e) {
+  const condition = [...e.target.classList].includes('backdrop')
+    if (condition) { 
+      closesBackdrop();
+    }
+}
+
+export function formSubmitHandler(e) {
+  e.preventDefault();
+  const formData = new FormData(e.currentTarget);
+  return formData;
+}
