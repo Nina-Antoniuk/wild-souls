@@ -1,45 +1,95 @@
 .goods {
+  position: relative;
+  padding-bottom: 50px;
   background-color: var(--main-bg-color);
 
+  @media screen and (min-width: 768px) {
+    padding-bottom: 100px;
+  }
   & .container {
-    margin-bottom: 75px;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.goods::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 15%;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../images/icons/store-lable.svg);
+
+  @media screen and(min-width: 768px) {
+    width: 80px;
+    height: 80px;
   }
 
-  &__header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  @media screen and (min-width: 1200px) {
+    top: -20px;
+    left: 15%;
+    width: 120px;
+    height: 120px;
   }
+}
 
-  &__content {
-    flex-basis: 506px;
+.goods__content {
+  @media screen and (min-width: 768px) {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  & .section__title {
+    text-align: center;
   }
 }
 
 .goods__slider {
-  height: 765px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
-  .slick-track {
-    width: 600px;
-    height: 750px;
-    justify-content: space-between;
+  @media screen and (max-width: 767.98px) {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
 .goods__slide {
   position: relative;
-  height: 600px;
-  margin-left: 40px;
-  margin-right: 40px;
-  transition: transform 250ms linear;
-
-  &.slick-slide {
-    width: 360px !important;
-  }
+  flex-basis: 45%;
+  margin-bottom: 90px;
 
   &:nth-child(2n - 1) {
-    transform: translateY(120px);
+    transform: translateY(30px);
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 120px;
+
+    &:nth-child(2n - 1) {
+      transform: translateY(50px);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    flex-basis: 250px;
   }
 }
 
@@ -47,39 +97,84 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 360px;
-  height: 526px;
-  border-radius: 275px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 120px;
+
+  @media screen and (min-width: 768px) {
+    border-radius: 275px;
+  }
 }
 
 .goods__slide-content {
   position: absolute;
-  top: 70%;
-  left: 0;
+  top: 90%;
+  left: 10%;
 
-  & p {
-    margin-bottom: 25px;
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 1.5;
+  @media screen and (min-width: 768px) {
+    top: 75%;
+    left: 2%;
+    max-width: 180px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: 70%;
+    left: -3%;
+    width: 180px;
   }
 }
 
 .goods__slide-title {
-  font-size: 36px;
-  line-height: 1.17;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  font-size: 13px;
+  line-height: 1.1;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+    font-size: 28px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
 }
 
 .goods__slide-btn {
-  width: 182px;
-  height: 47px;
-  border: none;
-  border-radius: 37px;
-  font-size: 18px;
+  width: 80px;
+  height: 25px;
+  font-size: 10px;
   line-height: 1.5;
+  border: none;
   text-align: center;
+  border-radius: 20px;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 250ms linear, color 250ms linear;
+  box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.432);
+
+  @media screen and (min-width: 768px) {
+    width: 180px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 37px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 130px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 37px;
+  }
+}
+
+.price {
+  margin-bottom: 5px;
+  font-size: 10px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
 }
 
 @each $num, $color in (1, #72a080) (2, #a95d50) (3, #abafd6) (4, #fecf6b) {
@@ -87,11 +182,6 @@
   .goods__slide:nth-child(#{$num}) .goods__slide-btn {
     background-color: #{$color};
   }
-}
-
-.goods__slide-btn {
-  cursor: pointer;
-  transition: background-color 250ms linear, color 250ms linear;
 }
 
 @each $num, $color in (1, #496651) (2, #68332a) (3, #5f6381) (4, #91702a) {
