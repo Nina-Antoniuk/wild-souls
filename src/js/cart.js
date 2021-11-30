@@ -2,6 +2,7 @@ import refs from './refs';
 
 refs.goodsListEl.addEventListener('click', createProductItemHandler);
 refs.cartBtnEl.addEventListener('click', opensCartHandler);
+refs.mobileCartBtnEl.addEventListener('click', opensCartHandler);
 
 const cart = {
   items: [],

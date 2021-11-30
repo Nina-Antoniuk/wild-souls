@@ -1,11 +1,11 @@
 .cart {
   position: absolute;
   z-index: 50;
-  top: 4rem;
-  right: 2rem;
-  width: 600px;
-  min-height: 200px;
-  padding: 15px;
+  top: 3rem;
+  right: 0;
+  width: 100%;
+  min-height: 300px;
+  padding: 50px 5px;
   border: 15px solid rgba(255, 255, 255, 0.7);
   border-radius: 30px;
   background-color: #f3fa8f;
@@ -18,6 +18,14 @@
     opacity: 0;
     pointer-events: none;
     transform: scale(0.6);
+  }
+
+  @media screen and (min-width: 768px) {
+    top: 4rem;
+    right: 2rem;
+    width: 600px;
+    min-height: 200px;
+    padding: 15px;
   }
 }
 
