@@ -190,3 +190,13 @@
     color: #fff;
   }
 }
+
+.goods__slide .goods__slide-btn:disabled {
+  background-color: rgb(155, 154, 154);
+  color: rgba(0, 0, 0, 0.432);
+}
+
+.goods__slide .goods__slide-btn:disabled:hover {
+  background-color: rgb(155, 154, 154);
+  color: rgba(0, 0, 0, 0.432);
+}
